@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title> Mon portfolio </title>
+        <link rel="stylesheet" href="Projet.CSS"/>
+        <script src="Projet.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <p class="name"><a href="#">MAWUSSI Caleb</a></p>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">A propos</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="home">
+            <div class="home-content">
+                <p>Je suis <span class="highlight">Caleb</span>, Marketeur stratégique et créatif, spécialisé dans le marketing B2B et digital, avec une expérience prouvée dans la négociation
+                    et la gestion de campagnes publicitaires. Expert en élaboration de stratégies commerciales, en branding et en communication.</p>
+                <a href="#projects" class="btn">Voir mes projets</a>
+            </div>
+            <div class="home-image">
+                <img src="projet.webp" alt="Image de présentation"/>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-content">
+                <h2>A propos</h2>
+                <p>Je m'appelle <span class="highlight">MAWUSSI</span>, je suis passionné par les campagnes publicitaires en ligne, la gestion de projets, la production
+                    de contenus et le développement Web.</p>
+                <p>Je suis actuellement une formation en <span class="highlight">marketing numérique</span> et en <span class="highlight">Développement Web</span> afin 
+                    d'appréhender de nouvelles compétences en développement Web (HTML, CSS, JavaScript, etc.) et d'approfondir mes connaissances sur le 
+                    marketing numérique notamment la gestion de campagnes marketing.</p>
+                <a href="CV_Caleb MAWUSSI.pdf" download="Mon_CV_Caleb" class="cv-button">Télécharger mon CV</a>
+            </div>
+            <div class="about-image">
+                <img src="ma photo.jpg" alt="Ma photo"/>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projets</h2>
+            <div class="projects-container">
+                <!-- Projet 1 : Calculatrice -->
+                <div class="project">
+                    <h3>Calculatrice</h3>
+                    <p>Une calculatrice simple pour effectuer des opérations mathématiques.</p>
+                    <div id="calc-container">
+                        <input type="text" id="calc-display" disabled>
+                        <div id="calc-buttons">
+                            <button>7</button>
+                            <button>8</button>
+                            <button>9</button>
+                            <button>/</button>
+                            <button>4</button>
+                            <button>5</button>
+                            <button>6</button>
+                            <button>*</button>
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>-</button>
+                            <button>0</button>
+                            <button>.</button>
+                            <button>=</button>
+                            <button>+</button>
+                            <button>C</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 2 : Chronomètre -->
+                <div class="project">
+                    <h3>Chronomètre</h3>
+                    <p>Un chronomètre pour mesurer le temps avec démarrage, pause et réinitialisation.</p>
+                    <div id="stopwatch-container">
+                        <h3 id="time-display">00:00:00</h3>
+                        <button id="start-btn">Démarrer</button>
+                        <button id="pause-btn">Pause</button>
+                        <button id="reset-btn">Réinitialiser</button>
+                    </div>
+                </div>
+                <!-- Projet 3 : Jeu de clics -->
+                <div class="project">
+                    <h3>Jeu de clics</h3>
+                    <p>Un mini-jeu où vous devez cliquer sur une cible pour augmenter votre score.</p>
+                    <div id="game-container">
+                        <div id="target"></div>
+                    </div>
+                    <p id="score-display">Score : 0</p>
+                </div>
+            </div>
+        </section>
+        <section id="competences">
+            <h2>Mes Compétences</h2>
+            <div class="competence-container">
+                <!-- Hard Skills -->
+                <div class="competence-category">
+                    <h3>Hard Skills</h3>
+                    <div class="competence">
+                        <label for="comp1">Marketing numérique</label>
+                        <progress id="comp1" value="85" max="100"></progress>
+                    </div>
+                    <div class="competence">
+                        <label for="comp2">Développement Web</label>
+                        <progress id="comp2" value="35" max="100"></progress>
+                    </div>
+                    <div class="competence">
+                        <label for="comp3">Graphisme / Design UX/UI</label>
+                        <progress id="comp3" value="60" max="100"></progress>
+                    </div>
+                    <div class="competence">
+                        <label for="comp4">Gestion de projet</label>
+                        <progress id="comp4" value="80" max="100"></progress>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div class="competence-category">
+                    <h3>Soft Skills</h3>
+                    <div class="competence">
+                        <label for="comp5">Communication</label>
+                        <progress id="comp5" value="90" max="100"></progress>
+                    </div>
+                    <div class="competence">
+                        <label for="comp6">Gestion du temps</label>
+                        <progress id="comp6" value="85" max="100"></progress>
+                    </div>
+                    <div class="competence">
+                        <label for="comp7">Leadership</label>
+                        <progress id="comp7" value="80" max="100"></progress>
+                    </div>
+                    <div class="competence">
+                        <label for="comp8">Travail en équipe</label>
+                        <progress id="comp8" value="95" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Vous avez un projet en tête ? N'hésitez pas à me contacter.</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nom">Votre Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Votre Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+                </div>
+                <div class="form-group">
+                    <label for="sujet">Votre Sujet :</label>
+                    <input type="text" id="sujet" name="sujet" placeholder="Entrez le sujet" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Écrivez votre message ici..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Envoyer</button>
+            </form>
+        </section>
+    </body>
+</html>
